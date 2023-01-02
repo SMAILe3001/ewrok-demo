@@ -1,2 +1,25 @@
-@import './common';
-@import './example';
+// utils
+@import './utils/mixin';
+@import './utils/variables';
+@import './utils/container';
+@import './utils/hidden';
+@import './utils/common';
+@import './utils/reset';
+@import './utils/decor';
+
+// components basic
+@import './basic/header';
+@import './basic/nav';
+@import './basic/hero';
+@import './basic/lease';
+@import './basic/reliability';
+@import './basic/projects';
+@import './basic/catalog';
+@import './basic/leasing';
+@import './basic/form';
+@import './basic/company';
+@import './basic/services';
+@import './basic/info';
+@import './basic/questions';
+@import './basic/map';
+@import './basic/footer';
