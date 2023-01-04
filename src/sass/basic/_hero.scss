@@ -1,0 +1,205 @@
+.hero__section {
+  background-color: #2d2d2d;
+  margin-bottom: 41px;
+
+  @include tablett {
+    margin-bottom: 40px;
+  }
+
+  @include desktop {
+    margin-bottom: 75px;
+  }
+}
+
+.slide__backraund {
+  background-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(../images/basic/hero/desktop/hero-fon.jpg);
+  background-size: cover;
+  background-position: left;
+
+  @include tablett {
+    position: relative;
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.8) 65%,
+        rgba(0, 0, 0, 0) 65%,
+        rgba(0, 0, 0, 0)
+      ),
+      url(../images/basic/hero/desktop/hero-fon.jpg);
+    background-size: cover;
+  }
+
+  @include desktop {
+    background-position: center;
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.8) 50%,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0)
+      ),
+      url(../images/basic/hero/desktop/hero-fon.jpg);
+  }
+}
+
+.hero__slide {
+  padding: 57px 0px 54px 0px;
+
+  @include tablett {
+    padding: 115px 0px;
+  }
+
+  @include desktop {
+    padding: 103px 17px 163px 0px;
+  }
+}
+
+.hero__title {
+  position: relative;
+  margin-bottom: 30px;
+  @include font(700, 44, 62, none);
+  font-family: 'PT Sans';
+  color: #2d2d2d;
+
+  @include tablett {
+    width: 466px;
+  }
+
+  @include desktop {
+    width: 544px;
+  }
+}
+
+.hero__title::after {
+  content: '';
+  position: absolute;
+  width: 160px;
+  height: 5px;
+  background-color: #fcb427;
+  top: -11px;
+  left: 0;
+
+  @include tablett {
+    width: 264px;
+    top: -20px;
+  }
+}
+
+.hero__text {
+  margin-bottom: 30px;
+
+  font-family: 'Montserrat';
+  @include font(400, 16, 25, none);
+  color: #2d2d2d;
+
+  @include tablett {
+    width: 435px;
+  }
+}
+
+.hero__button,
+.hero__link {
+  width: 219px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: 'PT Sans';
+  @include font(700, 18, 26, none);
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.hero__button {
+  background: #fcb427;
+  border: none;
+
+  color: #ffffff;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @include tablett {
+    margin-right: 28px;
+  }
+}
+
+.hero__link {
+  border: 1px solid #2d2d2d;
+  text-align: center;
+  align-items: flex-start;
+
+  color: #2d2d2d;
+
+  @include tablett {
+    display: inline-block;
+  }
+}
+
+.hero__nav {
+  position: absolute;
+  bottom: 0;
+  left: 65%;
+  transform: translateX(-50%);
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include desktop {
+    left: 50%;
+  }
+}
+
+.hero__next,
+.hero__prev {
+  display: block;
+  width: 66px;
+  height: 66px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero__next {
+  border: 1px solid #f3f3f3;
+  background-color: transparent;
+}
+
+.hero__prev {
+  background: #fcb427;
+  border: none;
+}
+
+.slide__number {
+  position: absolute;
+  top: 34px;
+  right: 62px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.slide__activ {
+  font-family: 'Roboto';
+  @include font(900, 40, 47, none);
+  color: #f1f1f1;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.slide__all {
+  @include font(none, 20, 23, none);
+  color: #e2e2e2;
+}
