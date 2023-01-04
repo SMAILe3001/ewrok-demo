@@ -1,0 +1,103 @@
+.header {
+}
+.header-black {
+  min-height: 238px;
+  background-color: #2d2d2d;
+  @include tablett {
+    min-height: 112px;
+    display: flex;
+    align-items: baseline;
+  }
+}
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 34px;
+  margin-bottom: 25px;
+}
+.header__logo {
+  margin-left: 2px;
+}
+
+.header__logo-icon {
+  fill: #ffffff;
+  margin-right: 22px;
+}
+
+.header__text {
+    @include font(400, 14, 20, none);
+  color: #ffffff;
+  max-width: 180px;
+}
+
+.header__phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 32px;
+  @include tablett {
+    padding-bottom: 18px;
+    right: 0;
+  }
+}
+
+.header__phone-icon {
+}
+
+.header__phone-list {
+  margin-left: 12px;
+}
+
+.header__phone-item {
+}
+
+.header__phone-link {
+    @include font (500, 16, 25, none);
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 156.69%;
+  color: #ffffff;
+}
+
+.header__nav{
+    padding-top: 22px;
+    padding-bottom: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-open{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    margin-right: 120px;
+}
+
+.header__nav-search {}
+.headre-nav__search-input-svg{
+    position: relative;
+}
+.header__nav-search-label {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-search-input {
+    width: 100%;
+    height: 30px;
+    outline: 0;
+    border: 1px solid rgba(45, 45, 45, 0.6);
+}
+
+.header__nav-search-icon {
+   position: absolute;
+   top: 50%;
+   right: 10px;
+   width: 15px;
+   transform: translateY(-50%);
+}
