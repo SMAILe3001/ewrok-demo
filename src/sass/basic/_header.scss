@@ -1,7 +1,7 @@
 .header {
 }
-.background-black{
-  background-color: #2d2d2d;
+.black {
+background-color: #2d2d2d;
 }
 .header-black {
   // min-height: 238px;
@@ -136,9 +136,13 @@
   color: #ffffff;
 }
 
-.background-white {
-  background-color: #ffffff;
+.white {
+background-color: #ffffff;
+@include desktop {
+  background-color: #f3f3f3;
 }
+}
+
 
 .header__nav{
     padding-top: 22px;
@@ -211,6 +215,12 @@
     height: 30px;
     outline: 0;
     border: 1px solid rgba(45, 45, 45, 0.6);
+    @include tablett {
+      width: 270px;
+    }
+    @include desktop {
+      background-color: #f3f3f3;
+    }
 }
 
 .header__nav-search-icon {
