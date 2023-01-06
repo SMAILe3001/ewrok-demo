@@ -203,3 +203,64 @@
   @include font(none, 20, 23, none);
   color: #e2e2e2;
 }
+
+.slick-slider {
+  position: relative;
+  padding: 0;
+}
+
+.slider-hero {
+  .slick-list {
+    overflow: hidden;
+  }
+
+  .slick-track {
+    display: flex;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    font-size: 0;
+    opacity: 0;
+
+    @include tablett {
+      z-index: 10;
+      width: 66px;
+      height: 66px;
+      opacity: 1;
+    }
+  }
+
+  .slick-arrow.slick-prev {
+    @include tablett {
+      background: transparent;
+      border: 1px solid #f3f3f3;
+      background-image: url(../images/basic/hero/prev.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      bottom: 0;
+      right: 35%;
+    }
+
+    @include desktop {
+      right: 50%;
+    }
+  }
+
+  .slick-arrow.slick-next {
+    @include tablett {
+      transform: translateX(100%);
+      background: #fcb427;
+      border: 0px;
+      background-image: url(../images/basic/hero/next.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      bottom: 0;
+      right: 35%;
+    }
+
+    @include desktop {
+      right: 50%;
+    }
+  }
+}
